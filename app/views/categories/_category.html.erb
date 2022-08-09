@@ -1,0 +1,13 @@
+<div id="<%= dom_id category %>">
+  <p>
+    <strong>Name:</strong>
+    <%= category.name %>
+  </p>
+
+  <p>
+    <strong>Icon:</strong>
+    <%= link_to category.icon.filename, category.icon if category.icon.attached? %>
+    <%= image_tag category.icon if category.icon.attached? %>
+  </p>
+
+</div>
