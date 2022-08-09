@@ -10,9 +10,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="h-screen max-w-2xl mx-auto border border-red-500 font-main text-[#434B54]">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <main class="h-full p-6">
+      <%= yield %>
+    </main>
   </body>
 </html>
