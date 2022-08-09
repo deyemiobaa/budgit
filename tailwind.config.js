@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: ['Raleway', 'sans-serif']
+        'main': 'Raleway, sans-serif'
+      },
+      colors: {
+        primary: '#3778C2',
       }
     }
   },
