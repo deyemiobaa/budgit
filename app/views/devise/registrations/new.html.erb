@@ -1,3 +1,5 @@
+<%= render "shared/header", title: "REGISTER", prev: root_path, value: "Next" %>
+
 <div class="bg-[#f5f6f8] h-full pt-6">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>

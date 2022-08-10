@@ -1,9 +1,7 @@
-<div class="flex items-center justify-between px-4 py-6 text-white">
-  <%= link_to path do %>
+<div class="flex items-center justify-between px-4 py-6 text-white h-14 bg-primary">
+  <%= link_to prev do %>
     <%= image_tag "left-arrow.png" %>
   <% end %>
   <p class="font-bold uppercase"><%= title %></p>
-  <%= link_to path do %>
-    <p><%= text %></p>
-  <% end %>
+  <input type="submit" value="<%= value %>" form="new_user" class="cursor-pointer">
 </div>
