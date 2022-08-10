@@ -12,6 +12,7 @@ class PaymentsController < ApplicationController
   # GET /payments/new
   def new
     @payment = Payment.new
+    @categories = Category.includes(:user).where(user: current_user)
   end
 
   # GET /payments/1/edit
