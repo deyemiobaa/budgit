@@ -2,12 +2,12 @@
 <%= image_tag 'logo.png', class: 'mx-auto' %>
 
 <div class="flex flex-col gap-3 text-center button-placeholder">
-  <%= link_to login_path do %>
+  <%= link_to new_user_session_path do %>
     <div class="p-4 rounded bg-[#3778C2] text-white">
       LOG IN
     </div>
   <% end %>
-  <%= link_to sign_up_path do %>
+  <%= link_to new_user_registration_path do %>
     <div class="p-4 rounded">
       SIGN UP
     </div>
