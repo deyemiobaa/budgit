@@ -1,12 +1,7 @@
-<div id="<%= dom_id payment %>">
-  <p>
-    <strong>Name:</strong>
-    <%= payment.name %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= payment.amount %>
-  </p>
-
-</div>
+<div id="<%= dom_id payment %>" class="flex flex-col p-4 mb-10 text-base bg-white rounded">
+  <div class="flex justify-between w-full mb-4">
+    <h3><%= payment.name %></h3> 
+    <p class="font-semibold leading-relaxed">Amount: <%= payment.amount %></p>
+  </div>
+  <p><%= payment.payment_date %></p>
+</div> 

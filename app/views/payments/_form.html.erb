@@ -26,7 +26,7 @@
     <%= form.collection_select :category_id, categories, :id, :name, {}, {class: "w-full border-[1.5px] border-form-stroke rounded-lg py-3 px-5 font-medium text-body-color placeholder-body-color outline-none focus:border-primary active:border-primary transition"}  %>
   </div>
 
-  <div class="inline-flex items-center justify-center px-10 py-4 text-base font-normal text-center text-white rounded-md cursor-pointer lg:px-8 xl:px-10 bg-primary hover:bg-opacity-90">
-    <%= form.submit %>
+  <div>
+    <%= form.submit class: "px-10 py-4 text-base font-normal text-center text-white rounded-md cursor-pointer lg:px-8 xl:px-10 bg-primary hover:bg-opacity-90" %>
   </div>
 <% end %>
