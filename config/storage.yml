@@ -9,8 +9,8 @@ local:
 # Use bin/rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 spaces:
   service: S3
-  access_key_id: 
-  secret_access_key: 
+  access_key_id: <%= Figaro.env.spaces_access_key_id %>
+  secret_access_key: <%= Figaro.env.spaces_secret_access_key %>
   region: nyc3
   bucket: budgit-app
   endpoint: https://nyc3.digitaloceanspaces.com/
