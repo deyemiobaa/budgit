@@ -21,7 +21,7 @@ RSpec.describe '/categories', type: :feature do
 
   describe 'GET /show' do
     it 'renders a successful response and page' do
-      category = Category.create(name: 'Test Category', icon: fixture_file_upload("logo.png"), user_id: @user.id)
+      category = Category.create(name: 'Test Category', icon: fixture_file_upload('logo.png'), user_id: @user.id)
       visit category_path(category)
       expect(page).to have_content('Test Category')
     end
@@ -39,7 +39,7 @@ RSpec.describe '/categories', type: :feature do
       it 'creates a new Category' do
         visit new_category_path
         fill_in 'Name', with: 'Test Category'
-        attach_file('Icon', Rails.root + 'spec/fixtures/files/logo.png')
+        attach_file('Icon', "#{Rails.root}spec/fixtures/files/logo.png")
         click_on 'Create Category'
         expect(page).to have_content('Test Category')
       end

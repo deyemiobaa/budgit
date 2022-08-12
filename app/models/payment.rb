@@ -7,6 +7,6 @@ class Payment < ApplicationRecord
   validates :name, presence: true
 
   def payment_date
-    self.created_at.strftime("%d %b %Y")
+    created_at.strftime('%d %b %Y')
   end
 end
