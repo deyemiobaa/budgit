@@ -2,9 +2,8 @@
 
 A web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/55185309/184538784-41eb91d2-6b37-47e5-bd8c-256516653aab.png" />
-</p>
+![image](https://user-images.githubusercontent.com/55185309/184540699-4353c054-c3e5-49e9-9b55-ece9ea3f6721.png)
+
 
 
 ### Live demo: [Budgit](https://my-budgit-app.herokuapp.com/)
