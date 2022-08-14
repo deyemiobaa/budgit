@@ -54,6 +54,10 @@ gem 'cssbundling-rails', '~> 1.1'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+gem 'aws-sdk-s3', require: false
+
+# Store encrypted credentials
+gem 'figaro'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -82,3 +86,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem 'pry-rails', group: :development

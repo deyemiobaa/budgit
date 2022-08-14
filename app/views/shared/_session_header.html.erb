@@ -1,0 +1,7 @@
+<div class="flex items-center justify-between px-4 py-6 text-white h-14 bg-primary">
+  <%= link_to(pathway) do %>
+    <%= image_tag "left-arrow.png" %>
+  <% end %>
+  <p class="font-bold uppercase"><%= title %></p>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
+</div>

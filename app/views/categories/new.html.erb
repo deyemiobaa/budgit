@@ -1,9 +1,6 @@
-<h1>New category</h1>
+<%= render "shared/session_header", title: "New Category", pathway: root_path %>
 
+<div class="bg-[#f5f6f8] h-full pt-6 px-10">
 <%= render "form", category: @category %>
-
-<br>
-
-<div>
-  <%= link_to "Back to categories", categories_path %>
 </div>
+

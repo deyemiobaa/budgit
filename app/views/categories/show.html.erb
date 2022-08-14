@@ -1,10 +1,20 @@
-<p style="color: green"><%= notice %></p>
+<%= render "shared/session_header", title: @category.name, pathway: root_path %>
 
-<%= render @category %>
+<section class="px-6 py-10">
+  <%= render @category %>
+  <div class="w-5/6 mx-auto">
+    <h2 class="w-full mb-10 font-semibold text-center">Payments</h2>
+    <% @payments.each do |payment| %>
+      <%= render payment %>
+    <% end %>
+  </div>
+  <div class="flex justify-between mt-10">
+    <%= link_to new_payment_path do %>
+      <div class="inline-flex items-center justify-center p-4 text-base font-normal text-center text-white rounded-md cursor-pointer bg-primary hover:bg-opacity-90">
+        Add new payment
+      </div>
+    <% end %>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
-
-  <%= button_to "Destroy this category", @category, method: :delete %>
-</div>
+    <%= button_to "Delete category", @category, method: :delete, class: "p-4 text-base font-normal text-center text-white rounded-md cursor-pointer bg-primary hover:bg-opacity-90" %>
+  </div>
+</section>

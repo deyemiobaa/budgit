@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="mb-6">
+    <%= form.label :name, class: "block mb-3 text-base font-medium" %>
+    <%= form.text_field :name, class: "w-full border-[1.5px] border-form-stroke rounded-lg py-3 px-5 font-medium text-body-color placeholder-body-color outline-none focus:border-primary active:border-primary transition" %>
+  </div>
+
+  <div class="mb-6">
+    <%= form.label :icon, class: "block mb-3 text-base font-medium" %>
+    <%= form.file_field :icon, direct_upload: true, class: "w-full border-[1.5px] border-form-stroke rounded-lg font-medium outline-none focus:border-primary active:border-primary transition cursor-pointer bg-white file:bg-white file:border-0 file:border-r file:border-solid file:border-collapse file:border-form-stroke file:py-3 file:px-5 file:mr-5 file:text-body-color file:cursor-pointer file:hover:bg-primary file:hover:bg-opacity-10" %>
   </div>
 
   <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.file_field :icon %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class: "px-10 py-4 text-base font-normal text-center text-white rounded-md cursor-pointer lg:px-8 xl:px-10 bg-primary hover:bg-opacity-90" %>
   </div>
 <% end %>

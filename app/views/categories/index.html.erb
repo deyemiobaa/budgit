@@ -1,14 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<%= render "shared/session_header", title: "Categories", pathway: root_path %>
 
-<h1>Categories</h1>
-
-<div id="categories">
+<section class="px-6 py-10">
   <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+    <%= link_to category_path(category) do %>
+      <%= render category %>
+    <% end %>
   <% end %>
-</div>
-
-<%= link_to "New category", new_category_path %>
+  <%= link_to new_category_path do %>
+    <div class="inline-flex items-center justify-center p-4 mt-10 text-base font-normal text-center text-white rounded-md cursor-pointer bg-primary hover:bg-opacity-90">
+      New Category
+    </div>
+  <% end %>
+</section>
