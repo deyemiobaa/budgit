@@ -7,7 +7,7 @@ A web application where you can manage your budget: you have a list of transacti
 </p>
 
 
-### Live demo: [Budgit](https://stark-everglades-12691.herokuapp.com/)
+### Live demo: [Budgit](https://my-budgit-app.herokuapp.com/)
 
 ## Built With
 
