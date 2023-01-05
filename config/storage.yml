@@ -15,6 +15,11 @@ spaces:
   bucket: budgit-app
   endpoint: https://nyc3.digitaloceanspaces.com/
 
+cloudinary:
+  service: Cloudinary
+  cloud_name: deyemiobaa
+  api_key: <%= Figaro.env.cloud_api_key %>
+  api_secret: <%= Figaro.env.cloud_api_secret %>
 # Remember not to checkin your GCS keyfile to a repository
 # google:
 #   service: GCS
